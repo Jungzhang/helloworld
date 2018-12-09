@@ -13,7 +13,7 @@ function build() {
         echo -n "$app build ok"
     fi
     mkdir -p ${out}
-    cp -rf ${app} control.sh ${out}
+    cp -rf ${app} ${out}
 }
 
 build
