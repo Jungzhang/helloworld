@@ -15,7 +15,7 @@ func sayHelloZhanggen(w http.ResponseWriter, r *http.Request) {
 }
 
 func sayHelloJenkins(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "hello zhanggen")
+	fmt.Fprintf(w, "hello jenkins")
 }
 
 func main() {
