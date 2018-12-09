@@ -4,10 +4,8 @@ app="helloworld"
 logfile="${app}.log"
 deployPath="/home/zhanggen/helloworld"
 
-killall ${app} &&
-rsync -av /tmp/output/. /home/zhanggen/helloworld &&
-cd /home/zhanggen/helloworld &&
+killall ${app}
+
 nohup ./${app} >> ${logfile} 2>&1 &
 
-sleep 1
 echo "helloworld"
