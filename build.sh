@@ -14,7 +14,6 @@ function build() {
     fi
     mkdir -p ${out}
     cp -rf ${app} control.sh ${out}
-    rm -rf ${out}
 }
 
 build
