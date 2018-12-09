@@ -10,6 +10,10 @@ func sayHelloWorld(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "helloworld")
 }
 
+func sayHelloZhanggen(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "helloworld zhanggen!")
+}
+
 func main() {
 	http.HandleFunc("/", sayHelloWorld)
 	err := http.ListenAndServe(":8080", nil)
