@@ -7,3 +7,5 @@ deployPath="/home/zhanggen/helloworld"
 killall ${app}
 
 nohup ./${app} >> ${logfile} 2>&1 &
+
+echo "helloworld"
